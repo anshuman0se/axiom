@@ -77,6 +77,46 @@ You can change these defaults to anything thus:
 
 make INSTALL=/home/me/myaxiom COMMAND=/home/me/bin/myaxiom install
 
+=======================================================================
+================= Basic Usage Examples for Axiom (Computer Algebra System) ====================================
+=======================================================================
+
+
+Axiom is a powerful symbolic computation system used for algebraic calculations, differentiation, solving equations, and more. Here are some examples
+of some of the basic features that it has, in addition to the commands required to execute them.
+
+```axiom
+-- Start Axiom interactive shell
+axiom  
+
+-- Basic arithmetic operations
+(1) -> 2 + 3  -- Addition
+(2) -> 10 / 4 -- Division (returns fraction)
+(3) -> 10.0 / 4.0  -- Division with decimals
+
+-- Assigning variables
+(4) -> x := 5  -- Assign 5 to x
+(5) -> y := x + 10  -- Assign x + 10 to y
+
+-- Differentiation
+(6) -> D(x^3 + 3*x^2 + 5, x)  -- Compute derivative of x^3 + 3x^2 + 5
+
+-- Solving equations
+(7) -> solve(x^2 - 4 = 0, x)  -- Solve x^2 - 4 = 0 for x
+
+-- Matrix operations
+(8) -> A := matrix([[1, 2], [3, 4]])  -- Define a 2x2 matrix
+(9) -> determinant(A)  -- Compute determinant of matrix A
+
+-- Defining functions
+(10) -> f(x) == x^2 + 2*x + 1  -- Define function f(x)
+(11) -> f(3)  -- Evaluate f(3)
+
+-- Plotting a function (requires gnuplot)
+(12) -> draw(sin(x), x=-5..5)  -- Plot sin(x) from -5 to 5
+
+-- Exiting Axiom
+(13) -> )quit  -- Quit Axiom
 
 =====================================================================
 
